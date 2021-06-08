@@ -5,7 +5,7 @@ const app=express(); //Crea servidor
 
 
 //setings
-app.set('port', process.env.PORT || 30722);
+app.set('port', process.env.PORT || 4000);
 
 //middleware
 app.use(cors());
