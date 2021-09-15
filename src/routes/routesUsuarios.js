@@ -6,6 +6,9 @@ const { getUsuariosInvitados, getOneUsuario, getUserAdmin, deleteInvitado, guard
 routerUsuarios.route('/:host')
     .get(getUsuariosInvitados)
 
+// routerUsuarios.route('/:userName')
+//     .get(getUsuariosInvitados)
+
 routerUsuarios.route('/:userName/:host')
     .get(getOneUsuario)
 

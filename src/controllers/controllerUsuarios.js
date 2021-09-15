@@ -8,6 +8,12 @@ usuarioCtrl.getUsuariosInvitados = async (req, res) => {
     //console.log(usuarios);
 };
 
+// usuarioCtrl.getUsuariosInvitados = async (req, res) => {
+//     const usuarios = await Usuario.find({ userName: req.params.userName });
+//     console.log(usuarios);
+//     res.json(usuarios);
+// };
+
 usuarioCtrl.getOneUsuario = async (req, res) => {
     //console.log(req.params.id);
     const usuario = await Usuario.find({ userName: req.params.userName, host: req.params.host });
