@@ -4,8 +4,8 @@ const usuarioCtrl = {}
 
 usuarioCtrl.getUsuariosInvitados = async (req, res) => {
     const usuarios = await Usuario.find({ host: req.params.host });
+    console.log(usuarios);
     res.json(usuarios);
-    //console.log(usuarios);
 };
 
 // usuarioCtrl.getUsuariosInvitados = async (req, res) => {
